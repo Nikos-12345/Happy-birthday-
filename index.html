@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="el">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday My Love! ❤️</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="app-container">
+
+    <div id="step-1" class="card active">
+        <div class="envelope-wrapper" onclick="nextStep(2)">
+            <div class="envelope-icon">✉️❤️</div>
+            <h2>Έχεις ένα μήνυμα...</h2>
+            <p style="font-size: 0.9rem; color: var(--text-muted);">Κάνε κλικ για να το ανοίξεις</p>
+        </div>
+    </div>
+
+    <div id="step-2" class="card">
+        <h1>Χρόνια πολλά Αγάπη μου και Γυναίκα της ζωής μου ❤️</h1>
+        <p>
+            Σήμερα είναι η ημέρα σου και ήθελα να σου φτιάξω κάτι ξεχωριστό, κάτι το οποίο δεν θα το περίμενες με τίποτα.
+            Σε αυτό το σημείο θέλω να σου ευχηθώ να έχεις πάντα υγεία, 
+            να χαμογελάς και να είσαι πάντα μέσα στην τρέλα.
+            <br><br>
+            Είσαι το στήριγμά μου, το χαμόγελό μου και ο άνθρωπος που κάνει την καθημερινότητά μου πιο όμορφη.
+        </p>
+        <button class="btn" onclick="nextStep(3)">Δες και κάτι ακόμα... 👉</button>
+    </div>
+
+    <div id="step-3" class="card">
+        <h2>10 από τους άπειρους λόγους που σε αγαπάω... ✨</h2>
+        
+        <div class="slider-container">
+            <div class="slide active">"1. Για το υπέροχο χαμόγελό σου που μου φτιάχνει τη μέρα."</div>
+            <div class="slide">"2. Για τον τρόπο που με στηρίζεις και με υποστηρίζεις."</div>
+            <div class="slide">"3. Για τον τρόπο που με κοιτάζεις."</div>
+            <div class="slide">"4. Γιατί μαζί σου ακόμα και οι πιο απλές στιγμές είναι μαγικές."</div>
+            <div class="slide">"5. Γιατί ο χρόνος κυλλάει όμορφα και πολύ γρήγορα μαζί σου."</div>
+            <div class="slide">"6. Γιατί είσαι ένα τρελό και ζαβό παιδάκι."</div>
+            <div class="slide">"7. Γιατί είσαι η καλύτερη ψυχούλα του κόσμου όλου."</div>
+            <div class="slide">"8. Γιατί ο έρωτάς μας είναι ό,τι καλύτερο υπάρχει στον κόσμο."</div>
+            <div class="slide">"9. Για την καλοσύνη σου."</div>
+            <div class="slide">"10. Γιατί είμαστε η καλύτερη και η πιο δυνατή ομάδα."</div>
+        </div>
+
+        <div class="slider-nav">
+            <button class="btn-nav" onclick="changeSlide(-1)">◀</button>
+            <button class="btn-nav" onclick="changeSlide(1)">▶</button>
+        </div>
+
+        <button class="btn" style="background-color: #10b981; margin-top: 25px;" onclick="nextStep(4)">Και το δώρο σου; 🎁</button>
+    </div>
+
+    <div id="step-4" class="card">
+        <h2>Τα Δώρα σου! 🎫</h2>
+        <p style="font-size: 0.95rem;">Διάλεξε ένα (ή και όλα!) από τα παρακάτω κουπόνια για να τα εξαργυρώσεις σήμερα:</p>
+        
+        <div class="coupons-grid">
+            <div class="coupon-card" onclick="revealCoupon(this)">
+                🎫 Κουπόνι 1
+                <div class="reveal">✨ Ρομαντικό Δείπνο Απόψε ✨</div>
+            </div>
+            <div class="coupon-card" onclick="revealCoupon(this)">
+                🎫 Κουπόνι 2
+                <div class="reveal">💆‍♂️ Χαλαρωτικό Μασάζ 💆‍♂️</div>
+            </div>
+            <div class="coupon-card" onclick="revealCoupon(this)">
+                🎫 Κουπόνι 3
+                <div class="reveal">🎬 Βραδιά ταινίας αγκαλίτσα 🎬</div>
+            </div>
+            <div class="coupon-card" onclick="revealCoupon(this)">
+                🎫 Κουπόνι 4
+                <div class="reveal">✨ Έρωτα όλη την ημέρα ✨</div>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
